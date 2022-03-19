@@ -16,7 +16,7 @@ jobs:
   job1
     runs-on: ubuntu-latest
     steps:
-      - name: Print Hello Message
+      - name: Message from job1
         run: echo "Hello world from [job1]"
 
       - name: Execute a few commands
@@ -28,5 +28,5 @@ jobs:
   job2:
     runs-on: ubuntu-latest
     steps:
-      - name: Print Hello Message
+      - name: Message from job1=2
         run: echo "Package name is ${{env.DEPLOY_PACKAGE_NAME}}"
