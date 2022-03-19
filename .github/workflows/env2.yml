@@ -1,0 +1,22 @@
+name: example_env_variabls
+env:
+  APPLICATION_NAME: "MyFlask"
+  DEPLOY_PACKAGE_NAME: "flask-deploy-ver-${{ github.sha }}"
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the main branch
+  push:
+    branches: 
+      - main
+
+  
+jobs:
+  # This workflow contains a single job called "build"
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Execute a few commands
+        run:
+        echo "Application name ${{env.APPLICATION_NAME}}"
