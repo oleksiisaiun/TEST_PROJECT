@@ -10,7 +10,7 @@ on:
   
 jobs:
   # This workflow contains a single job called "build"
-  job1
+  job1:
     runs-on: ubuntu-latest
     steps:
       - name: Print Hello Message
