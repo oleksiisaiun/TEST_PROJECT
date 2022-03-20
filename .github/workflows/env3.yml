@@ -13,15 +13,17 @@ on:
 
 jobs:
   # This workflow contains a single job called "build"
-  job1:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Print Hello Message
-        run: echo "Hello world from [job1]"
-        
-  job2:
+  job01:
     runs-on: ubuntu-latest
     steps:
       - name: Run a one-line script
-        run: echo "Result of Application name ${{env.APPLICATION_NAME}}"
+        run: echo "Result of Application name ${{env.APPLICATION_NAME}}"  
+  
+  job02:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Hello Message
+        run: echo "git SHA value is ${{DEPLOY_PACKAGE_NAME}}"
+        
+
 
