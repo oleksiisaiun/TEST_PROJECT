@@ -20,8 +20,6 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: Run a one-line script
-        run: |
-        echo "Message1"
-        echo "Message2"
+        run: 
         echo "Result of Application name ${{env.APPLICATION_NAME}}"
 
