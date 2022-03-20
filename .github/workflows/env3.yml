@@ -23,7 +23,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print Hello Message
-        run: echo "git SHA value is ${{DEPLOY_PACKAGE_NAME}}"
+        run: echo "git SHA value is ${{env.DEPLOY_PACKAGE_NAME}}"
         
 
 
