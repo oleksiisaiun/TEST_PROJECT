@@ -36,5 +36,8 @@ jobs:
         
       - name: os
         run: uname -a        
+        
+      - name: aws-version
+        run: aws --version          
 
 
