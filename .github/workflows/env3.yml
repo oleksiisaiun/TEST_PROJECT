@@ -19,7 +19,13 @@ jobs:
       - name: Run a one-line script
         run: echo "Result of Application name ${{env.APPLICATION_NAME}}"  
         
-      - name: list of current files
+      - name: list of current files before clone repo
+        run: ls -la   
+        
+      - name: clone repo       
+        uses: action/checkout@v1
+
+      - name: list of current files after clone repo
         run: ls -la   
 
       - name: current user
