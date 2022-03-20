@@ -19,14 +19,16 @@ jobs:
       - name: Run a one-line script
         run: echo "Result of Application name ${{env.APPLICATION_NAME}}"  
         
-      - name: list of cruurent files
+      - name: list of current files
         run: ls -la   
+
+      - name: current user
+        run: whoami
   
-  job02:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Print Hello Message
-        run: echo "git SHA value is ${{env.DEPLOY_PACKAGE_NAME}}"
+      - name: current dir
+        run: pwd
         
+      - name: os
+        run: uname -a        
 
 
